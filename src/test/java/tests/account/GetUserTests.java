@@ -1,4 +1,3 @@
-
 package tests.account;
 
 import api.account.AccountAPI;
@@ -18,7 +17,7 @@ public class GetUserTests extends BaseTest {
     @Test
     public void getUnauthorizedUserByUUID() {
         // Arrange
-        String userId = "befce4ac-a8fb-4c41-8da4-c9276cd4ad1e";
+        String userId = "bb06d06b-aeb3-4af9-a9c8-aec38547d3ec";
 
         // Act
         Response response = AccountAPI.getUserByUUIDWithoutToken(userId);
@@ -31,7 +30,7 @@ public class GetUserTests extends BaseTest {
     public void getAuthorizedUserByUUID() {
 
         // Arrange
-        String userId = "befce4ac-a8fb-4c41-8da4-c9276cd4ad1e";
+        String userId = "bb06d06b-aeb3-4af9-a9c8-aec38547d3ec";
         String userToken = TokenManager.getGeneralUserToken();
 
         // Act
